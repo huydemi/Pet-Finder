@@ -34,6 +34,7 @@ class SettingsTableViewController: UITableViewController {
     super.viewDidLoad()
     
     navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .done, target: self, action: #selector(dismissAnimated))
+    themeSelector.selectedSegmentIndex = Theme.current.rawValue
   }
 }
 
